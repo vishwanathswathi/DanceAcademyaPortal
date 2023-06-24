@@ -1,0 +1,127 @@
+<html lang="en">
+{%load static%}
+    <head>
+        <meta name="viewport" content="width =device-width , initial-scale=1.0">
+        <title>
+            About Us
+        </title>
+        <link href="{% static 'images/website_logo.jpg' %}" rel="shortcut icon">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="/home/"><img src="{% static 'images/ABHINETRI-Logo.png' %}" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home/">Home</a></li>
+                        <li><a href="/aboutus/">About Us</a></li>
+                        <li><a href="/staff/">Staff</a></li>
+                        <li><a href="/gallery/">Gallery</a></li>
+                        <li><a href="/courses/">Courses</a></li>
+                        <li><a href="/contactus/">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+                <h1>About Us</h1>
+ </section>
+
+ <!------------------- about us content ------------------>
+
+<div class="container">
+    <div class="main-wrapper">
+        <div class="inner-image">
+            <img src="{% static 'images/1.jpg' %}" alt="img">
+        </div>
+
+        <div class="inner-text">
+            <h1>About Our Academy</h1>
+            <p>
+                Property Valuesalue	Description	Play it
+                number	A length unit, or percentage, specifying the initial length of the flexible item(s)
+                auto	Default value. The length is equal to the length of the flexible item. If the item has no length specified, the length will be according to its content
+                initial	Sets this property to its default value. Read about initial
+                inherit	Inherits this property from its parent element. Read about inherit
+                Related Pages
+            </p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-----------Footer------------>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Company<span>logo</span></h3>
+
+				<p class="footer-links">
+					<a href="/home/" class="link-1">Home</a>
+
+					<a href="/aboutus/">About</a>
+
+					<a href="/staff/">Staff</a>
+
+					<a href="/gallery/">Gallery</a>
+
+					<a href="/courses/">Courses</a>
+
+					<a href="/contactus/">Contact Us</a>
+				</p>
+
+				<p class="footer-company-name">Abhinerti Arts Academy © 2023</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Beside Gayatri Medical Hall</span> Sithaphalmandhi, Sec-bad</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 9848464357</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Abhinerti</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+			</div>
+
+		</footer>
+
+    <!---------javascrip for toggle menu(phone view)-------->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+    </body>
+</html>

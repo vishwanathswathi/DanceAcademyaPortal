@@ -1,0 +1,208 @@
+<html lang="en">
+{%load static%}
+    <head>
+        <meta name="viewport" content="width =device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <title>Gallery page</title>
+        <link href="{% static 'images/website_logo.jpg' %}" rel="shortcut icon">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="/home/"><img src="{% static 'images/ABHINETRI-Logo.png' %}" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home/">Home</a></li>
+                        <li><a href="/aboutus/">About Us</a></li>
+                        <li><a href="/staff/">Staff</a></li>
+                        <li><a href="/gallery/">Gallery</a></li>
+                        <li><a href="/courses/">Courses</a></li>
+                        <li><a href="/contactus/">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+                <h1>Gallery</h1>
+        </section>
+
+ <!-------------------image gallery ------------------>
+
+<div class="staff">
+    <div class="card">
+        <div class="circle">
+            <div class="imgbox">
+                <a href="/kuchipudiural/">
+                    <img src="{% static 'images/kuchi.jpg' %}" alt="img">
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-icon">
+                <h2>KUCHIPUDI</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <div class="imgbox">
+                <a href="/musicurl/">
+                    <img src="{% static 'images/music2.webp' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-icon">
+                <h2>MUSIC</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <div class="imgbox">
+                <a href="/guitarurl/">
+                    <img src="{% static 'images/guitar2.jpg' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-icon">
+                <h2>GUITAR</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <div class="imgbox">
+               <a href="/keyboardurl/">
+                    <img src="{% static 'images/keyboard.jpeg' %}" alt="img">
+               </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-icon">
+                <h2>KEYBOARD</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <div class="imgbox">
+                <a href="/bhartnatyamurl/">
+                    <img src="{% static 'images/bhar.png' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <a href="#"></a>
+            <div class="text-icon">
+                <h2>BHARTNATYAM</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <div class="imgbox">
+                 <a href="/westerndanceurl/">
+                    <img src="{% static 'images/westerndance.jpeg' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-icon">
+                <h2>WESTERNDANCE</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <div class="imgbox">
+                 <a href="/videourl/">
+                    <img src="{% static 'images/video2.png' %}" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-icon">
+                <h2>VIDEO</h2>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-----------Footer------------>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Company<span>logo</span></h3>
+
+				<p class="footer-links">
+					<a href="/home/" class="link-1">Home</a>
+
+					<a href="/aboutus/">About</a>
+
+					<a href="/staff/">Staff</a>
+
+					<a href=/gallery/>Gallery</a>
+
+					<a href="/courses/">Courses</a>
+
+					<a href="/contactus/">Contact Us</a>
+				</p>
+				<p class="footer-company-name">Abhinerti Arts Academy © 2023</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Beside Gayatri Medical Hall</span> Sithaphalmandhi, Sec-bad</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 9848464357</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Abhinerti</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+			</div>
+
+		</footer>
+
+    <!---------javascrip for toggle menu(phone view)-------->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+    </body>
+</html>

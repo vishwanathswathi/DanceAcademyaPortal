@@ -1,0 +1,254 @@
+<html lang="en">
+{%load static%}
+    <head>
+        <meta name="viewport" content="width =device-width , initial-scale=1.0">
+        <title>
+            Home Page
+        </title>
+        <link href="{% static 'images/website_logo.jpg' %}" rel="shortcut icon">
+        <link rel="stylesheet" href="{%static "css/home.css"%}">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{#                <script src="https://kit.fontawesome.com/a076d05399.js"></script>#}
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="/home/"><img src="{% static 'images/ABHINETRI-Logo.png' %}" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home/">Home</a></li>
+                        <li><a href="/aboutus/">About Us</a></li>
+                        <li><a href="/staff/">Staff</a></li>
+                        <li><a href="/gallery/">Gallery</a></li>
+                        <li><a href="/courses/">Courses</a></li>
+                        <li><a href="/contactus/">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+    <div class="text-box">
+        <h1>Abhinerti Arts Academy</h1>
+        <p>School of music and dance</p>
+        <a href="" class="hero-btn">Vist us to know more</a>
+    </div>
+        </section>
+
+   <!---------javascrip for toggle menu(phone view)-------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+  <!----------------------Courses------------------->
+
+  <section class="course">
+    <h1>Courses we offer</h1>
+    <p>Click on image to know more</p>
+    <div class="wrapper">
+        <div class="cols">
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(/static/images/1.jpg)">
+                              <div class="inner">
+                                  <p>Bharthanatyam</p>
+                    <span>Know more &rArr;</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                <p>Bharthanatyam<br>
+                                Weekly 2 classes
+                                Monday and Saturday
+                                </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(/static/images/3.jpg)">
+                              <div class="inner">
+                                  <p>Guitar</p>
+                    <span>Know more &rArr;</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col" ontouchstart="this.classList.toggle('hover');">
+                      <div class="container">
+                          <div class="front" style="background-image: url(/static/images/bh.jpg)">
+                              <div class="inner">
+                                  <p>Kuchipudi</p>
+                    <span>Know more  &rArr;</span>
+                              </div>
+                          </div>
+                          <div class="back">
+                              <div class="inner">
+                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            <div class="btttn">
+                     <a href="/courses/" class="hero-btn red-btn">Click here for more details</a>
+            </div>
+       </div>
+  </section>
+
+  <!------------Testimonials----------------->
+  <div class="testimonial">
+    <h1>What Our Students say</h1>
+       <div class="wrappers">
+           <div class="box">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                     a galley of type and scrambled it to make a type specimen book. It has survived not only
+                     five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                     1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                     like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="contents">
+                    <div class="infos">
+                         <div class="names">Name</div>
+                        <div class="jobs">Designation</div>
+                        <div class="stars"></div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+
+
+                    </div>
+                    <div class="images">
+{#                        <img src="images/57.png">#}
+                        <img src="{% static 'images/img.png' %}">
+                    </div>
+                </div>
+           </div>
+           <div class="box">
+             <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                     a galley of type and scrambled it to make a type specimen book. It has survived not only
+                     five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                     1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                     like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="contents">
+                    <div class="infos">
+                       <div class="names">Name</div>
+                        <div class="jobs">Designation</div>
+                        <div class="stars"></div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+
+                    </div>
+                    <div class="images">
+                        <img src="{% static 'images/1.jpg' %}">
+                    </div>
+                </div>
+           </div>
+
+           <div class="box">
+           <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                     a galley of type and scrambled it to make a type specimen book. It has survived not only
+                     five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                     1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                     like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="contents">
+                    <div class="infos">
+                       <div class="names">Name</div>
+                        <div class="jobs">Designation </div>
+                        <div class="stars"></div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div class="images">
+                        <img src="{% static 'images/2.jpg' %}">
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+
+
+<!-----------Footer------------>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Company<span>logo</span></h3>
+
+				<p class="footer-links">
+					<a href="/home/" class="link-1">Home</a>
+
+					<a href="/aboutus/">About</a>
+
+					<a href="/staff/">Staff</a>
+
+					<a href="/gallery/">Gallery</a>
+
+					<a href="/courses/">Courses</a>
+
+					<a href="/contactus/">Contact Us</a>
+				</p>
+
+				<p class="footer-company-name">Abhinerti Arts Academy © 2023</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Beside Gayatri Medical Hall</span> Sithaphalmandhi, Sec-bad</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 9848464357</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Abhinerti</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+			</div>
+
+		</footer>
+    </body>
+</html>
